@@ -97,7 +97,7 @@
         background-color: white;
         letter-spacing: 1px;
         line-height: 2;
-        margin-top: 2.5em;
+        margin-top: 0.75em;
         padding-top: 2%;
         padding-bottom: 0%;
         margin-bottom: 0%;
@@ -149,10 +149,18 @@
       }
 
       #container {
-        padding-top: 5px;
+        padding-top: 55px;
       }
 
+	  .badge1 {
+		margin: 0 5px 0 15px;
+	  }
+
       @media only screen and (max-width: 768px) {
+        #container {
+          padding-top: 0px;
+        }
+
         nav {
           padding: 2.5% 0;
         }
@@ -168,7 +176,7 @@
 
         .jumbotron {
           width: 100%;
-          letter-spacing: 0.45px;
+          letter-spacing: 0.40px;
           line-height: 2;
           font-size: 1.05em;
           margin: 0%;
@@ -191,6 +199,10 @@
         #alert {
           letter-spacing: 0.12em;
         }
+
+		li {
+			font-weight: bold;
+		}
       }
 
       .wrapper {
@@ -284,6 +296,14 @@
                 עוגות שמרים / שיש<span class="badge pull-left">50 ש"ח</span>
               </li>
               <li>קילו פריקסה<span class="badge pull-left">100 ש"ח</span></li>
+
+              <li>
+                מגוון סלטים: קטן<span class="badge badge1">10 ש"ח</span>בינוני<span
+                  class="badge badge1"
+                  >20 ש"ח</span
+                >
+                גדול<span class="badge badge1">40 ש"ח</span>
+              </li>
             </ul>
             <h4 id="alert" style="font-weight: bold; line-height: 1.4">
               ההזמנות מתבצעות בתשלום מקדמה. לפרטים נוספים מוזמנים ליצור קשר
@@ -293,7 +313,7 @@
       </div>
 
       <div class="text-center">
-        <h1 class="caption page-header">דוגמאות</h1>
+        <h1 class="caption page-header">דוגמאות מצולמות</h1>
       </div>
 
       <div class="row text-center">
@@ -303,10 +323,16 @@
             <img class="img" src="1.jpg" />
           </div>
         </div>
-        <div class="col-lg-4 col-lg-offset-2 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
           <div class="thumbnail">
             <p><label>ג'חנון</label></p>
             <img class="img" src="3.jpg" />
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="thumbnail">
+            <p><label>סלט</label></p>
+            <img class="img" src="4.jpg" />
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">

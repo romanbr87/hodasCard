@@ -89,6 +89,20 @@
         background-image: url("./background.jpg");
       }
 
+      nav {
+        padding: 1%;
+      }
+
+      .jumbotron {
+        background-color: white;
+        letter-spacing: 1px;
+        line-height: 2;
+        margin-top: 2.5em;
+        padding-top: 2%;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+      }
+
       a {
         text-decoration: none;
         margin-right: 5px;
@@ -106,20 +120,12 @@
       a:hover {
         transition: color 0.2s;
       }
-      .jumbotron {
-        background-color: white;
-        /*opacity: 0.65;*/
-      }
 
       .pull-center {
         float: none;
         display: block;
         margin: 0 auto;
         /* margin-left: auto; margin-right: auto; */
-      }
-
-      p {
-        direction: rtl;
       }
 
       label {
@@ -138,41 +144,22 @@
         width: 100%;
       }
 
-      /* #imgs {
-          margin-top: -1em;
-        } */
+      #alert {
+        letter-spacing: 0.1em;
+      }
 
       #container {
         padding-top: 60px;
       }
 
-      @media only screen and (min-width: 768px) {
-        .jumbotron > p {
-          margin-bottom: 0;
-        }
-
-        .jumbotron {
-          letter-spacing: 1px;
-          line-height: 2;
-          margin-top: 1.8em;
-          padding-top: 3%;
-          padding-bottom: 0%;
-          margin-bottom: 0%;
-        }
-      }
-
       @media only screen and (max-width: 768px) {
+        nav {
+          padding: 2.5% 0;
+        }
+
         .page-header {
           border-bottom: 2px solid snow;
-		  margin-bottom: -7%;
-        }
-
-        #container {
-          padding-top: 35px;
-        }
-
-        #menu {
-          padding-top: 3em;
+          margin-bottom: -7%;
         }
 
         .row {
@@ -180,7 +167,29 @@
         }
 
         .jumbotron {
-          letter-spacing: 0.5px;
+          width: 100%;
+          letter-spacing: 0.45px;
+          line-height: 2;
+          font-size: 1.05em;
+          margin: 0%;
+          padding: 0%;
+          margin-bottom: -5%;
+        }
+
+        #a1 {
+          width: 38%;
+          padding-left: 0%;
+          padding-right: 0%;
+          margin-left: 0%;
+          margin-right: 0%;
+        }
+
+        .a2 {
+          width: 31%;
+        }
+
+        #alert {
+          letter-spacing: 0.12em;
         }
       }
 
@@ -209,16 +218,16 @@
     </style>
   </head>
   <body>
-    <nav class="navbar-inverse navbar-fixed-top" style="padding: 1%">
+    <nav class="navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="text-center">
-          <div id="a1" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 a2">
             <a href="javascript:whatsappURL();"><span>ווטסאפ</span></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div id="a1" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <a href="tel:0515568919"><span>טלפון: 051-556-8919</span></a>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 a2">
             <a href="https://www.facebook.com/profile.php?id=100008930593861"
               ><span>הפרופיל שלי</span></a
             >
@@ -238,9 +247,9 @@
 
         <div class="col-lg-6 col-md-6">
           <div class="jumbotron">
-            <p class="text-center" style="padding-bottom: 2%">
-              המאכלים של הודיה
-            </p>
+            <div class="text-center" style="padding-bottom: 2%">
+              <h3 style="font-weight: bold">המאכלים של הודיה</h3>
+            </div>
             שמי הודיה. אני מכינה מגוון מאכלים ביתיים טעימים להזמנה:
             <ul>
               <li>עלי גפן, קילו<span class="badge pull-left">150 ש"ח</span></li>
@@ -276,9 +285,9 @@
               </li>
               <li>קילו פריקסה<span class="badge pull-left">100 ש"ח</span></li>
             </ul>
-            <span>
+            <h4 id="alert" style="font-weight: bold; line-height: 1.4">
               ההזמנות מתבצעות בתשלום מקדמה. לפרטים נוספים מוזמנים ליצור קשר
-            </span>
+            </h4>
           </div>
         </div>
       </div>

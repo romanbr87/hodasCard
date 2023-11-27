@@ -83,6 +83,10 @@
     <link rel="manifest" href="manifest.json" />
 
     <style type="text/css">
+	  * {
+	  	border-radius: 0px;
+	  }
+
       body {
         overflow-x: hidden;
         background-image: url("./background.jpg");
@@ -93,12 +97,11 @@
       }
 
       .jumbotron {
-        background-color: white;
+        background-color: white; /*rgb(255, 174, 201)*/;
         letter-spacing: 1px;
         line-height: 2;
         margin-top: 0.75em;
-        padding-top: 2%;
-        padding-bottom: 0%;
+		padding: 2% 0%;
         margin-bottom: 0%;
       }
 
@@ -163,7 +166,11 @@
         margin: 0 5px 0 15px;
       }
 
-      @media only screen and (max-width: 768px) {
+	  #img {
+			margin-top: 1.3em;
+	  }
+      
+	  @media only screen and (max-width: 768px) {
         #container {
           padding-top: 0px;
         }
@@ -268,7 +275,7 @@
           class="col-lg-4 col-lg-offset-1 col-md-6 hidden-sm hidden-xs"
           id="img"
         >
-          <img id="favicon" class="img-responsive thumbnail" src="1.jpg" />
+          <img class="img-responsive thumbnail" src="1.jpg" />
         </div>
 
         <div class="col-lg-6 col-md-6">
@@ -326,7 +333,7 @@
               class="hidden-sm hidden-xs"
             >
               ההזמנות מתבצעות בתשלום מקדמה. איסוף מנוף הגליל. לפרטים נוספים
-              מוזמנים ליצור קשר
+              מוזמנים ליצור קשר בטל': 051-556-8919
             </h4>
             <p
               id="alert"
@@ -334,7 +341,7 @@
               class="hidden-lg hidden-md"
             >
               ההזמנות מתבצעות בתשלום מקדמה. איסוף מנוף הגליל. לפרטים נוספים
-              מוזמנים ליצור קשר
+              מוזמנים ליצור קשר בטל': 
             </p>
           </div>
         </div>

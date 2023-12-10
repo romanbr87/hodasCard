@@ -6,26 +6,28 @@ import MyImg from './MyImg';
 import MyMenu from './MyMenu';
 
 export default function App() {
-  const text1 = "ההזמנות מתבצעות בתשלום מקדמה. איסוף מנוף הגליל. לפרטים נוספים מוזמנים ליצור קשר בטל' 051-556-8919"
-  //const text1 = "ההזמנות מתבצעות בתשלום מקדמה. איסוף מנוף הגליל. לפרטים נוספים מוזמנים ליצור קשר.";
+  //const text1 = "ההזמנות מתבצעות בתשלום מקדמה. איסוף מנוף הגליל. לפרטים נוספים מוזמנים ליצור קשר בטל' 051-556-8919"
+  const text1 = "ההזמנות מתבצעות בתשלום מקדמה. איסוף מנוף הגליל. לפרטים נוספים מוזמנים ליצור קשר.";
 
   const sortItemsByPrice = (data) => data.sort((a, b) =>
     parseInt(a.price) - parseInt(b.price)
   );
 
   //console.clear();
-  console.log(Object.keys(data?.menu));
+  // console.log(Object.keys(data?.menu));
+  // style={{
+  //   backgroundColor: "rgb(255, 174, 201)"
+  // }}
 
   return (
     <>
       <MyMenu />
-      <Container fluid={isMobile} className="mb-5">
-        <div className="jumbotron rounded" style={{
-          backgroundColor: "rgb(255, 174, 201)"
-        }}>
-          <span className='display-5 text-center' style={{ fontWeight: "bold" }}>המאכלים של הודיה</span>
+      <Container fluid={isMobile}>
+        <div className="jumbotron bg-light rounded text-center">
+          <span style={{ fontWeight: "bold", fontSize: isBrowser ? "35px" : "20px" }}>המאכלים של הודיה</span>
           <br />
-          <span className='text-right' style={{ fontSize: "20px" }}>
+          <span className='text-right mt-0 pt-0' style={isBrowser ? {fontSize: "20px"} : 
+          {fontSize: "15px"} }>
             שמי הודיה. אני מכינה מגוון מאכלים ביתיים טעימים להזמנה:</span>
           <br />
 
@@ -68,8 +70,8 @@ export default function App() {
         </div>
 
         <MyImg />
-        <Row style={{marginTop: "1px"}}>
-          <Col xs={8} sm={8} md={4} lg={4}>
+        <Row style={{ marginTop: "1px" }} className="justify-content-center">
+          <Col lg="auto" md="auto" sm="auto" xs="auto">
             <a href="https://www.facebook.com/media/set/?set=a.3197479870559668&type=3" className='display-5 text-center'>
               לאלבום תמונות בפייסבוק
             </a>

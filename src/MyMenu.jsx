@@ -22,7 +22,7 @@ const MyMenu = () => {
       : "https://web.whatsapp.com/") + "send?phone=972515568919";
 
   const MyNavLink = (props) => (
-    <Nav.Link {...props} className="border rounded text-center">
+    <Nav.Link {...props} className="text-center">
       <h3 style={{ fontWeight: "bold" }}>{props.children}</h3>
     </Nav.Link>
   );

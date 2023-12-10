@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col, Nav } from "react-bootstrap";
+import { Container, Row, Col, Nav, Button } from "react-bootstrap";
 import { isMobile, isBrowser } from 'react-device-detect';
 import data from "./menu1.json";
 import MyImg from './MyImg';
@@ -22,12 +22,12 @@ export default function App() {
   return (
     <>
       <MyMenu />
-      <Container fluid={isMobile}>
-        <div className="jumbotron bg-light rounded text-center">
-          <span style={{ fontWeight: "bold", fontSize: isBrowser ? "35px" : "20px" }}>המאכלים של הודיה</span>
+      <Container fluid={isMobile} className="mb-5">
+        <div className="jumbotron bg-light rounded">
+          <h1 className='text-center mb-0' style={{ fontWeight: "bold", fontSize: isBrowser ? "35px" : "30px" }}>המאכלים של הודיה</h1>
           <br />
           <span className='text-right mt-0 pt-0' style={isBrowser ? {fontSize: "20px"} : 
-          {fontSize: "15px"} }>
+          {fontSize: "17px", lineHeight: "1", textAlign: "right"} }>
             שמי הודיה. אני מכינה מגוון מאכלים ביתיים טעימים להזמנה:</span>
           <br />
 

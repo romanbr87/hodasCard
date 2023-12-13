@@ -22,21 +22,21 @@ export default function App() {
   return (
     <>
       <MyMenu />
-      <Container fluid={isMobile} className="mb-5">
+      <Container fluid={isMobile} className="mb-4">
         <div className="jumbotron bg-light rounded">
           <h1 className='text-center mb-0' style={{ fontWeight: "bold", fontSize: isBrowser ? "35px" : "30px" }}>המאכלים של הודיה</h1>
           <br />
-          <span className='text-right mt-0 pt-0' style={isBrowser ? {fontSize: "20px"} : 
-          {fontSize: "17px", lineHeight: "1", textAlign: "right"} }>
+          <span className='text-right mt-0 pt-0' style={isBrowser ? { fontSize: "20px" } :
+            { fontSize: "17px", lineHeight: "1", textAlign: "right" }}>
             שמי הודיה. אני מכינה מגוון מאכלים ביתיים טעימים להזמנה:</span>
           <br />
 
           <Row className='mt-4'>
             {Object.keys(data?.menu).map((menuItem, i) =>
               <Col lg={6} md={6} key={`submenuItems${i}`}>
-                <div className="text-center" style={{ marginBottom: "2%", paddingBottom: "2%" }}>
+                <div className="text-center" style={{ padding: "0", margin: "0", marginBottom: "2%", paddingBottom: "2%" }}>
                   <span className='display-6' style={{ fontWeight: "bold" }}>{`${menuItem}`}</span>
-                  <ul>
+                  <ul className='mt-3'>
                     {sortItemsByPrice(data?.menu[menuItem]).map((items, j) =>
                       <li key={`submenuItems ${i} ${j}`} className="text-right" style={{ fontSize: "15px" }}>
                         {items.name}
@@ -58,7 +58,7 @@ export default function App() {
               </p>
             </Col>
 
-            <Col className="hidden-sm hidden-xs">
+            <Col className="hidden-sm hidden-xs mb-3">
               <h2
                 id="text1"
                 style={{ fontWeight: 'bold', lineHeight: '1.4' }}
@@ -72,7 +72,8 @@ export default function App() {
         <MyImg />
         <Row style={{ marginTop: "1px" }} className="justify-content-center">
           <Col lg="auto" md="auto" sm="auto" xs="auto">
-            <a href="https://www.facebook.com/media/set/?set=a.3197479870559668&type=3" className='display-5 text-center'>
+            <a href="https://www.facebook.com/media/set/?set=a.3197479870559668&type=3" className=
+              {`display-5 text-center ${isMobile && "btn btn-primary"}`} style={isMobile ? { fontSize: "25px" } : {}}>
               לאלבום תמונות בפייסבוק
             </a>
           </Col>

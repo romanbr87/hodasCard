@@ -53,9 +53,11 @@
   }
 
   .thumbnail {
-    background-color: transparent;
-    border: none;
-    margin-top: 2%;
+    /* background-color: transparent; */
+    /* border: none; */
+    /* margin-top: 10%; */
+    /* padding: 3px; */
+    padding-top: 0%;
   }
 
   ul {

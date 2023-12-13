@@ -22,8 +22,8 @@ export default function App() {
   return (
     <>
       <MyMenu />
-      <Container fluid={isMobile} className="mb-4">
-        <div className="jumbotron bg-light rounded">
+      <Container fluid={isMobile} className="mb-5">
+        <div className="jumbotron bg-light rounded pt-3 pb-3">
           <h1 className='text-center mb-0' style={{ fontWeight: "bold", fontSize: isBrowser ? "35px" : "30px" }}>המאכלים של הודיה</h1>
           <br />
           <span className='text-right mt-0 pt-0' style={isBrowser ? { fontSize: "20px" } :

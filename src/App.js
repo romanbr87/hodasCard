@@ -23,15 +23,18 @@ export default function App() {
     <>
       <MyMenu />
       <Container fluid={isMobile} className="mb-5">
-        <div className="jumbotron bg-light rounded pt-3 pb-3">
+        <div className="jumbotron rounded pt-3 pb-3">
           <h1 className='text-center mb-0' style={{ fontWeight: "bold", fontSize: isBrowser ? "35px" : "30px" }}>המאכלים של הודיה</h1>
           <br />
-          <span className='text-right mt-0 pt-0' style={isBrowser ? { fontSize: "20px" } :
-            { fontSize: "17px", lineHeight: "1", textAlign: "right" }}>
+          <span className='text-right mt-0 pt-0' style={isBrowser ? { fontSize: "22px" } :
+            { fontSize: "17px", lineHeight: "1", textAlign: "right", letterSpacing: "0.15em" }}>
             שמי הודיה. אני מכינה מגוון מאכלים ביתיים טעימים להזמנה:</span>
           <br />
+          <div className='mt-4'>
+              <img src='./menu.jpg' className="pull-center" style={{ width: isBrowser? "50%": "100%", height: isBrowser? "50%": "100%" }} />
+          </div>
 
-          <Row className='mt-4'>
+          {/* <Row className='mt-4'>
             {Object.keys(data?.menu).map((menuItem, i) =>
               <Col lg={6} md={6} key={`submenuItems${i}`}>
                 <div className="text-center" style={{ padding: "0", margin: "0", marginBottom: "2%", paddingBottom: "2%" }}>
@@ -47,8 +50,8 @@ export default function App() {
                 </div>
               </Col>
             )}
-          </Row>
-          <Row className='mt-0'>
+          </Row> */}
+          {/* <Row className='mt-0'>
             <Col className="hidden-lg hidden-md ">
               <p
                 id="text1"
@@ -66,7 +69,7 @@ export default function App() {
                 {text1}
               </h2>
             </Col>
-          </Row>
+          </Row> */}
         </div>
 
         <MyImg />

@@ -19,7 +19,7 @@ const MyMenu = () => {
     navigator.userAgent.match(/BlackBerry/i) ||
     navigator.userAgent.match(/Windows Phone/i)
       ? "whatsapp://"
-      : "https://web.whatsapp.com/") + "send?phone=972515568919";
+      : "https://web.whatsapp.com/") + "send?phone=972533855658";
 
   const MyNavLink = (props) => (
     <Nav.Link {...props} className="text-center">
@@ -36,7 +36,7 @@ const MyMenu = () => {
               <MyNavLink href={whatsappURL}>ווטסאפ</MyNavLink>
             </Col>
             <Col lg="auto" md="auto" sm="auto" xs="auto">
-              <MyNavLink href="tel:0515568919">טל: 051-556-8919</MyNavLink>
+              <MyNavLink href="tel:0533855658">טל: 053-385-5658</MyNavLink>
             </Col>
             <Col lg="auto" md="auto" sm="auto" xs="auto">
               <MyNavLink href="https://www.facebook.com/profile.php?id=100008930593861">

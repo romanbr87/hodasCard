@@ -11,12 +11,12 @@
     />
 
     <!-- Primary Meta Tags -->
-    <title>המאכלים של הודיה</title>
-    <meta name="title" content="המאכלים של הודיה" />
+    <title>המטבח של הודיה</title>
+    <meta name="title" content="המטבח של הודיה" />
     <meta name="description" content="מגוון מאכלים ביתיים להזמנה" />
 
-    <meta name="title" content="המאכלים של הודיה" />
-    <meta name="application-name" content="המאכלים של הודיה" />
+    <meta name="title" content="המטבח של הודיה" />
+    <meta name="application-name" content="המטבח של הודיה" />
     <meta name="image" content="3.jpg" type="image/jpeg" />
 
     <link
@@ -204,7 +204,7 @@
   </head>
   <body>
     <div class="jumbotron">
-      <h3 style="font-weight: bold">המאכלים של הודיה</h3>
+      <h3 style="font-weight: bold">המטבח של הודיה</h3>
       שמי הודיה. אני מכינה מגוון מאכלים ביתיים טעימים להזמנה:
 
       <div id="menu">

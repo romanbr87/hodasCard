@@ -24,7 +24,7 @@ export default function App() {
       <MyMenu />
       <Container fluid={isMobile} className="mb-5">
         <div className="jumbotron rounded pt-3 pb-3">
-          <h1 className='text-center mb-0' style={{ fontWeight: "bold", fontSize: isBrowser ? "35px" : "30px" }}>המאכלים של הודיה</h1>
+          <h1 className='text-center mb-0' style={{ fontWeight: "bold", fontSize: isBrowser ? "35px" : "30px" }}>המטבח של הודיה</h1>
           <br />
           <span className='text-right mt-0 pt-0' style={isBrowser ? { fontSize: "22px" } :
             { fontSize: "17px", lineHeight: "1", textAlign: "right", letterSpacing: "0.15em" }}>

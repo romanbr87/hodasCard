@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes"
+    />
+
+    <!-- Primary Meta Tags -->
+    <title>המאכלים של הודיה</title>
+    <meta name="title" content="המאכלים של הודיה" />
+    <meta name="description" content="מגוון מאכלים ביתיים להזמנה" />
+
+    <meta name="title" content="המאכלים של הודיה" />
+    <meta name="application-name" content="המאכלים של הודיה" />
+    <meta name="image" content="3.jpg" type="image/jpeg" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <style type="text/css">
+      * {
+        border-radius: 0px;
+      }
+
+      body {
+        overflow-x: hidden;
+        background-image: url("./background.jpg");
+      }
+
+      nav {
+        padding: 1%;
+      }
+
+      .jumbotron {
+        background-color: rgb(255, 174, 201);
+        letter-spacing: 1px;
+        line-height: 2;
+        margin-top: 0.75em;
+        padding: 2% 0%;
+        margin-bottom: 0%;
+      }
+
+      a {
+        text-decoration: none;
+        margin-right: 5px;
+        font-weight: bolder;
+      }
+      a {
+        text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+        color: white;
+      }
+      a:hover {
+        text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+        color: silver;
+      }
+      a,
+      a:hover {
+        transition: color 0.2s;
+      }
+
+      .pull-center {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        /* margin-left: auto; margin-right: auto; */
+      }
+
+      label {
+        font-size: 1.5em;
+      }
+
+      .thumbnail {
+        background-color: transparent;
+        border: none;
+        margin-top: 2%;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      /* li {
+        text-align: right;
+        margin-right: -2.9em;
+        width: 100%;
+      } */
+
+      li {
+        text-align: right;
+        margin-right: -2.9em;
+        width: 100%;
+        border-bottom: 1px solid #fff; /* Add a top border */
+        padding: 3px 0; /* Add padding to improve spacing */
+      }
+
+      #alert {
+        letter-spacing: 0.1em;
+      }
+
+      #container {
+        padding-top: 55px;
+      }
+
+      .badge {
+        margin-right: 15px;
+        margin-top: 5px;
+      }
+
+      .badge1 {
+        margin: 0 5px 0 15px;
+      }
+
+      #img {
+        margin-top: 1.3em;
+      }
+
+      @media only screen and (max-width: 768px) {
+        #container {
+          padding-top: 0px;
+        }
+
+        nav {
+          padding: 2.5% 0;
+        }
+
+        .page-header {
+          border-bottom: 2px solid snow;
+          margin-bottom: -7%;
+        }
+
+        .row {
+          margin-top: 3em;
+        }
+
+        .jumbotron {
+          width: 100%;
+          letter-spacing: 0.4px;
+          line-height: 2;
+          font-size: 1.05em;
+          margin: 0%;
+          padding: 0% 15%;
+          margin-bottom: -5%;
+          padding-bottom: 2px;
+        }
+
+        #a1 {
+          width: 38%;
+          padding-left: 0%;
+          padding-right: 0%;
+          margin-left: 0%;
+          margin-right: 0%;
+        }
+
+        .a2 {
+          width: 31%;
+        }
+
+        #alert {
+          letter-spacing: 0.12em;
+        }
+
+        li {
+          font-weight: bold;
+          width: 110%;
+        }
+
+        .badge {
+          margin-top: 1px;
+        }
+      }
+
+      .wrapper {
+        width: 200px;
+        margin: auto;
+        border: 4px solid #eb1c49;
+        overflow-x: hidden;
+      }
+
+      .target {
+        position: relative;
+        animation: myfirst 20s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes myfirst {
+        0% {
+          right: 0;
+        }
+        100% {
+          right: 100vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h3 style="font-weight: bold">המאכלים של הודיה</h3>
+      שמי הודיה. אני מכינה מגוון מאכלים ביתיים טעימים להזמנה:
+
+      <div id="menu">
+        <div>
+          <div class="col-lg-6 col-md-6">
+            <div
+              class="text-center"
+              style="margin-bottom: 2%; padding-bottom: 2%"
+            >
+              <h3 style="font-weight: bold">בשרים</h3>
+              <ul>
+                <li>
+                  מנת ילדים: שניצל+פסטה+פתיתים<span class="badge pull-left"
+                    >25₪</span
+                  >
+                </li>
+                <li>אושפלו עם עוף<span class="badge pull-left">150₪</span></li>
+                <li>אושפלו עם בשר<span class="badge pull-left">200₪</span></li>
+                <li>
+                  צלי בשר עם פטריות<span class="badge pull-left">250₪</span>
+                </li>
+                <li>
+                  קילו קובה סלק, 30 יח' סיר מלא<span class="badge pull-left"
+                    >250₪</span
+                  >
+                </li>
+                <li>
+                  קובה במיה סיר מלא<span class="badge pull-left">250₪</span>
+                </li>
+                <li>
+                  קובה דלעת סער מלא<span class="badge pull-left">250₪</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div
+              class="text-center"
+              style="margin-bottom: 2%; padding-bottom: 2%"
+            >
+              <h3 style="font-weight: bold">בצקים ואורז</h3>
+              <ul>
+                <li>
+                  ג'חנון קפוא, יחידה<span class="badge pull-left">10₪</span>
+                </li>
+                <li>
+                  ג'חנון אפוי, יחידה עם רסק+ביצה<span class="badge pull-left"
+                    >20₪</span
+                  >
+                </li>
+                <li>מנת אורז לבן<span class="badge pull-left">20₪</span></li>
+                <li>
+                  מנת אורז לבן עם איטריות<span class="badge pull-left"
+                    >25₪</span
+                  >
+                </li>
+                <li>
+                  מנת אורז אדום עיראקי<span class="badge pull-left">25₪</span>
+                </li>
+                <li>
+                  מנת אורז עם תפוא בתחתית הסיר<span class="badge pull-left"
+                    >25₪</span
+                  >
+                </li>
+                <li>סיר אורז<span class="badge pull-left">60₪</span></li>
+                <li>
+                  פריקסה 20 יח' ללא תוספות<span class="badge pull-left"
+                    >100₪</span
+                  >
+                </li>
+                <li>קילו עלי גפן<span class="badge pull-left">150₪</span></li>
+                <li>
+                  פריקסה 20 יח' עם תוספות<span class="badge pull-left"
+                    >250₪</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div
+              class="text-center"
+              style="margin-bottom: 2%; padding-bottom: 2%"
+            >
+              <h3 style="font-weight: bold">שונות</h3>
+              <ul>
+                <li>
+                  מגוון סלטים לפי הזמנה מראש, קטן<span class="badge pull-left"
+                    >10₪</span
+                  >
+                </li>
+                <li>
+                  שעועית צהובה/ירוקה, חצי קילו<span class="badge pull-left"
+                    >20₪</span
+                  >
+                </li>
+                <li>
+                  מגוון סלטים לפי הזמנה מראש, בינוני<span
+                    class="badge pull-left"
+                    >20₪</span
+                  >
+                </li>
+                <li>
+                  מגוון סלטים לפי הזמנה מראש, גדול<span class="badge pull-left"
+                    >40₪</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div
+              class="text-center"
+              style="margin-bottom: 2%; padding-bottom: 2%"
+            >
+              <h3 style="font-weight: bold">מתוקים</h3>
+              <ul>
+                <li>ספינג', 10 יח'<span class="badge pull-left">20₪</span></li>
+                <li>עוגת שמרים<span class="badge pull-left">50₪</span></li>
+                <li>עוגת שיש/תפוזים<span class="badge pull-left">50₪</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-center col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-1"
+        style="padding-bottom: 2%"
+      >
+        <h4
+          id="alert"
+          style="font-weight: bold; line-height: 1.4"
+          class="hidden-sm hidden-xs"
+        >
+          ההזמנות מתבצעות בתשלום מקדמה. איסוף מנוף הגליל. לפרטים נוספים מוזמנים
+          ליצור קשר.
+        </h4>
+        <p
+          id="alert"
+          style="font-weight: bold; font-size: 17px; line-height: 1.4"
+          class="hidden-lg hidden-md"
+        >
+          ההזמנות מתבצעות בתשלום מקדמה. איסוף מנוף הגליל. לפרטים נוספים מוזמנים
+          ליצור קשר.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
